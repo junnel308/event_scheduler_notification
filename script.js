@@ -1,13 +1,14 @@
 var todaysDate = document.querySelector("#todays-date");
 var lockButton = document.querySelector('button');
 
+
 var date = new Date();
 var currentHour = date.getHours();
 var currentDate = date.toDateString();
 
 todaysDate.value = currentDate;
 
-if(currentHour) { 
+if(currentHour ===  true) { 
     displayHere.value = "Current Hour";
     displayHere.style.backgroundColor = "blue";
 }
