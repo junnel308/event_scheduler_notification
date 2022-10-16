@@ -52,7 +52,7 @@ h1 {
 }
 
 .user-input {
-    width: 77%;
+    width: 78%;
     height: 75px;
     padding-bottom: 15px;
     float: left; 
@@ -60,17 +60,6 @@ h1 {
     color:rgb(219, 30, 30);
     font-size: 20px;
 }
-
-.user-input {
-    width: 77%;
-    height: 75px;
-    padding-bottom: 15px;
-    float: left; 
-    background-color:rgb(137, 207, 240);
-    color:rgb(219, 30, 30);
-    font-size: 20px;
-}
-
 
 button {
     width: 10%;
@@ -78,6 +67,6 @@ button {
     border-bottom-right-radius: 25px; 
     border-top-right-radius: 25px;
     background-color: rgb(92, 175, 92);
-    font-size: 25px;
+    font-size: 20px;
     
 }
