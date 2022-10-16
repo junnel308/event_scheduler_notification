@@ -47,7 +47,6 @@ h1 {
     float: left; 
     font-size: 18px;
     background-color: aliceblue;
-    margin-bottom: 2px;
 }
 
 .user-input {
@@ -57,7 +56,6 @@ h1 {
     float: left; 
     background-color:rgb(137, 207, 240);
     color:rgb(219, 30, 30);
-    margin-bottom: 2px;
 }
 
 button {
@@ -67,5 +65,5 @@ button {
     border-top-right-radius: 25px;
     background-color: rgb(92, 175, 92);
     font-size: 30px;
-    margin-bottom: 2px;
+    
 }
