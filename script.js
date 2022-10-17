@@ -189,7 +189,7 @@ if (currentHour >= 14) {
 
 if (currentHour >= 15) {
     threePM.value = "Current Hour";
-    threeAM.style.backgroundColor = "rgb(227, 227, 129)";
+    threePM.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 14) {
         twoPM.value = "Time has passed";
         twoPM.style.backgroundColor =  "rgb(124, 134, 124)";
