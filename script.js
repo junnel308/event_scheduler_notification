@@ -36,7 +36,7 @@ todaysDate.value = currentDate;
 for(var i = 0; i < currentDate.length; i++) {
 
 //Time AM
-if (currentHour <= 24) {
+if (currentHour >= 00) {
     twelveAM.value = "Current Hour";
     twelveAM.style.backgroundColor = "rgb(227, 227, 129)";
 } 
@@ -48,9 +48,7 @@ if (currentHour >= 1) {
         twelveAM.value = "Time has passed";
         twelveAM.style.backgroundColor =  "rgb(124, 134, 124)";
         twelveAM.style.color = "white";
-        setTimeout (function() {
-            window.location.reload(1);
-        }, 30*60000)
+        document.getElementById('twelve-am').readOnly = true;
     }
 } 
 
@@ -61,16 +59,18 @@ if (currentHour >= 2) {
         oneAM.value = "Time has passed";
         oneAM.style.backgroundColor =  "rgb(124, 134, 124)";
         oneAM.style.color = "white";
+        document.getElementById('one-am').readOnly = true;
     }
 }
 
-if (currentHour >= 3) {
+if (currentHour >= 3) { 
     threeAM.value = "Current Hour";
     threeAM.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 2) {
         twoAM.value = "Time has passed";
         twoAM.style.backgroundColor =  "rgb(124, 134, 124)";
         twoAM.style.color = "white";
+
     }
 }
 
@@ -152,6 +152,11 @@ if(currentHour >= 11) {
         tenAM.value = "Time has passed";
         tenAM.style.backgroundColor =  "rgb(124, 134, 124)";
         tenAM.style.color = "white";
+    }
+    if (currentHour != 24) {
+        twelveAM.value = "Time has passed";
+        twelveAM.style.backgroundColor =  "rgb(124, 134, 124)";
+        twelveAM.style.color = "white";
     }
 }
 
