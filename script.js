@@ -1,5 +1,6 @@
 var todaysDate = document.querySelector("#todays-date");
 var lockButton = document.querySelector('button');
+var localStorage = document.querySelector('input');
 var twelveAM = document.querySelector("#twelve-am");
 var oneAM = document.querySelector("#one-am");
 var twoAM = document.querySelector("#two-am");
@@ -39,7 +40,7 @@ for(var i = 0; i < currentDate.length; i++) {
 if (currentHour >= 00) {
     twelveAM.value = "Current Hour";
     twelveAM.style.backgroundColor = "rgb(227, 227, 129)";
-} 
+}
 
 if (currentHour >= 1) {
     oneAM.value = "Current Hour";

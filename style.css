@@ -41,8 +41,6 @@ h1 {
     height: 75px; 
     border-style: dashed; 
     border-width: 5%; 
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
     justify-content: center;
     align-items: center;
     text-align: center; 
