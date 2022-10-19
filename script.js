@@ -524,7 +524,7 @@ if(currentHour >= 23) {
     }
 }
 }
-window.localStorage.removeItem("RESPONSE1");
+
 
 function displayInput1 () {
     localStorage.setItem('RESPONSE1', JSON.stringify(twelveAM.value));
