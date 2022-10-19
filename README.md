@@ -2,7 +2,7 @@
 
 ## Description
 
-This website contains contains current date and will be updated real time and also each hour sections to log any appointments, events, chores, etc. This application is an everyday use because it will let you know real time if each hour has passed, which will turn the input section gray and white text that the time has passed and events logged has ended and unable to be edited. As for the current hour, the input section will turn yellow and will be able to be edited and any value inputted will be saved even after the page reloaded or refreshed. User are able to log anything for the future hours and will be saved also even after page is reloaded. 
+This website contains contains current date and will be updated real time and also each hour sections to log any appointments, events, chores, etc. This application is an everyday use because it will let you know real time if each hour has passed, which will turn the input section gray and white text that the time has passed and events logged has ended and unable to be edited. As for the current hour, the input section will turn yellow and will be able to be edited and any value inputted will be saved even after the page reloaded or refreshed. User are able to log anything for the future hours and will be saved also even after page is reloaded. Added a few extra feature like giving user validation, if they are trying to log something, a pop will appear saying "Logged Succesfully" and if user is trying it log and the textbox is empty, a pop will appear, giving the user a message that "It's Empty". Another feature added is when every hour passes, the button correspondting to each local storage box will be disabled. Last feature that was added is whenever it is a the next day, the local storage where previous event was logged will all be removed and start fresh. 
 
 
 ## Usage
@@ -15,9 +15,9 @@ https://junnel308.github.io/event_scheduler_notification/
 
 ## Screenshots
 
-<img src="./images/screenshot1.png" />
+<img src="./images/screenshot3.png" />
 
-<img src="./images/screenshot2.png" />
+<img src="./images/screenshot4.png" />
 
 ## Credits
 
