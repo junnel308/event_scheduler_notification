@@ -50,13 +50,25 @@ h1 {
 }
 
 .user-input {
-    width: 78%;
+    width: 39%;
     height: 75px;
     padding-bottom: 15px;
     float: left; 
     background-color:rgb(137, 207, 240);
     color:rgb(219, 30, 30);
     font-size: 20px;
+    border-right: none;
+}
+
+.user-input1 {
+    width: 39%;
+    height: 75px;
+    padding-bottom: 15px;
+    float: left; 
+    background-color:rgb(137, 207, 240);
+    color:rgb(219, 30, 30);
+    font-size: 20px;
+    border-left: none;
 }
 
 button {
