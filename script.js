@@ -88,7 +88,7 @@ oneAM1.value = JSON.parse(localStorage.getItem("RESPONSE2"));
 lockButton2.addEventListener("click", displayInput2);
 twoAM1.value = JSON.parse(localStorage.getItem("RESPONSE3"));
 lockButton3.addEventListener("click", displayInput3);
-threeAM1.value = JSON.parse(localStorage.getItem("RESPONSE4"));
+threeAM1.value = JSON.parse(localStorage.getItem("RESPONSE4")) || [];
 lockButton4.addEventListener("click", displayInput4);
 fourAM1.value = JSON.parse(localStorage.getItem("RESPONSE5"));
 lockButton5.addEventListener("click", displayInput5);
@@ -133,15 +133,24 @@ elevenPM1.value = JSON.parse(localStorage.getItem("RESPONSE24"));
 lockButton24.addEventListener("click", displayInput24);
 
 for(var i = 0; i < currentDate.length; i++) {
+    
+while (true){
+    if (currentMinute != 00) {
+        break;
+    } else {
+        window.location.reload(true);
+    }
+}
+
 //Time AM
 if (currentHour >= 00) {
-    twelveAM.value = "Current Hour"
+    document.getElementById('twelve-am').placeholder = "Current Hours: Log Upcoming Event here...";
     twelveAM.style.backgroundColor = "rgb(227, 227, 129)";
     twelveAM1.style.backgroundColor = "rgb(227, 227, 129)";
 }
 
 if (currentHour >= 1) {
-    oneAM.value = "Current Hour";
+    document.getElementById('one-am').placeholder = "Current Hours: Log Upcoming Event here...";
     oneAM.style.backgroundColor = "rgb(227, 227, 129)";
     oneAM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 12) {
@@ -154,11 +163,14 @@ if (currentHour >= 1) {
         document.getElementById('twelve-am').readOnly = true;
         document.getElementById('twelve-am1').readOnly = true;
         document.getElementById('btn1').disabled = true;
+        document.getElementById('btn1').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('twelve-am').style.cursor = "default";
+    
     }
 } 
 
 if (currentHour >= 2) {
-    twoAM.value = "Current Hour";
+    document.getElementById('two-am').placeholder = "Current Hours: Log Upcoming Event here...";
     twoAM.style.backgroundColor = "rgb(227, 227, 129)";
     twoAM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 1) {
@@ -171,11 +183,13 @@ if (currentHour >= 2) {
         oneAM1.style.color = "white";
         document.getElementById('one-am1').readOnly = true;
         document.getElementById('btn2').disabled = true;
+        document.getElementById('btn2').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('one-am').style.cursor = "default";
     }
 }
 
 if (currentHour >= 3) { 
-    threeAM.value = "Current Hour";
+    document.getElementById('three-am').placeholder = "Current Hours: Log Upcoming Event here...";
     threeAM.style.backgroundColor = "rgb(227, 227, 129)";
     threeAM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 2) {
@@ -188,11 +202,13 @@ if (currentHour >= 3) {
         twoAM1.style.color = "white";
         document.getElementById('two-am1').readOnly = true;
         document.getElementById('btn3').disabled = true;
+        document.getElementById('btn3').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('two-am').style.cursor = "default";
     }
 }
 
 if (currentHour >= 4) {
-    fourAM.value = "Current Hour";
+    document.getElementById('four-am').placeholder = "Current Hours: Log Upcoming Event here...";
     fourAM.style.backgroundColor = "rgb(227, 227, 129)";
     fourAM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 3) {
@@ -205,12 +221,13 @@ if (currentHour >= 4) {
         threeAM1.style.color = "white";
         document.getElementById('three-am1').readOnly = true;
         document.getElementById('btn4').disabled = true;
-        
+        document.getElementById('btn4').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('three-am').style.cursor = "default";   
     }
 }
 
 if (currentHour >= 5) {
-    fiveAM.value = "Current Hour";
+    document.getElementById('five-am').placeholder = "Current Hours: Log Upcoming Event here...";
     fiveAM.style.backgroundColor = "rgb(227, 227, 129)";
     fiveAM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 4) {
@@ -223,11 +240,13 @@ if (currentHour >= 5) {
         fourAM1.style.color = "white";
         document.getElementById('four-am1').readOnly = true;
         document.getElementById('btn5').disabled = true;
+        document.getElementById('btn5').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('four-am').style.cursor = "default";
     }
 }
 
 if (currentHour >= 6) {
-    sixAM.value = "Current Hour";
+    document.getElementById('six-am').placeholder = "Current Hours: Log Upcoming Event here...";
     sixAM.style.backgroundColor = "rgb(227, 227, 129)";
     sixAM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 5) {
@@ -240,11 +259,13 @@ if (currentHour >= 6) {
         fiveAM1.style.color = "white";
         document.getElementById('five-am1').readOnly = true;
         document.getElementById('btn6').disabled = true;
+        document.getElementById('btn6').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('five-am').style.cursor = "default";
     }
     }
 
 if (currentHour >= 7) {
-    sevenAM.value = "Current Hour";
+    document.getElementById('seven-am').placeholder = "Current Hours: Log Upcoming Event here...";
     sevenAM.style.backgroundColor = "rgb(227, 227, 129)";
     sevenAM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 6) {
@@ -257,11 +278,13 @@ if (currentHour >= 7) {
         sixAM1.style.color = "white";
         document.getElementById('six-am').readOnly = true;
         document.getElementById('btn7').disabled = true;
+        document.getElementById('btn7').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('six-am').style.cursor = "default";
     }
 }
 
 if (currentHour >= 8) {
-    eightAM.value = "Current Hour";
+    document.getElementById('eight-am').placeholder = "Current Hours: Log Upcoming Event here...";
     eightAM.style.backgroundColor = "rgb(227, 227, 129)";
     eightAM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 7) {
@@ -274,11 +297,13 @@ if (currentHour >= 8) {
         sevenAM1.style.color = "white";
         document.getElementById('seven-am1').readOnly = true;
         document.getElementById('btn8').disabled = true;
+        document.getElementById('btn8').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('seven-am').style.cursor = "default";
     }
 }
 
 if (currentHour >= 9) {
-    nineAM.value = "Current Hour";
+    document.getElementById('nine-am').placeholder = "Current Hours: Log Upcoming Event here...";
     nineAM.style.backgroundColor = "rgb(227, 227, 129)";
     nineAM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 8) {
@@ -291,11 +316,13 @@ if (currentHour >= 9) {
         eightAM1.style.color = "white";
         document.getElementById('eight-am1').readOnly = true;
         document.getElementById('btn9').disabled = true;
+        document.getElementById('btn9').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('eight-am').style.cursor = "default";
     }
 }
 
 if (currentHour >= 10) {
-    tenAM.value = "Current Hour";
+    document.getElementById('ten-am').placeholder = "Current Hours: Log Upcoming Event here...";
     tenAM.style.backgroundColor = "rgb(227, 227, 129)";
     tenAM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 9) {
@@ -308,12 +335,14 @@ if (currentHour >= 10) {
         nineAM1.style.color = "white";
         document.getElementById('nine-am1').readOnly = true;
         document.getElementById('btn10').disabled = true;
+        document.getElementById('btn10').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('nine-am').style.cursor = "default";
     }
 }
 
 
 if(currentHour >= 11) {
-    elevenAM.value = "Current Hour";
+    document.getElementById('eleven-am').placeholder = "Current Hours: Log Upcoming Event here...";
     elevenAM.style.backgroundColor = "rgb(227, 227, 129)";
     elevenAM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 10) {
@@ -326,6 +355,8 @@ if(currentHour >= 11) {
         tenAM1.style.color = "white";
         document.getElementById('ten-am1').readOnly = true;
         document.getElementById('btn11').disabled = true;
+        document.getElementById('btn11').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('ten-am').style.cursor = "default";
 
     }
     if (currentHour != 24) {
@@ -340,7 +371,7 @@ if(currentHour >= 11) {
 
 // Time PM
 if (currentHour >= 12) {
-    twelvePM.value = "Current Hour";
+    document.getElementById('twelve-pm').placeholder = "Current Hours: Log Upcoming Event here...";
     twelvePM.style.backgroundColor = "rgb(227, 227, 129)";
     twelvePM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 11) {
@@ -353,12 +384,14 @@ if (currentHour >= 12) {
         elevenAM1.style.color = "white";
         document.getElementById('eleven-am1').readOnly = true;
         document.getElementById('btn12').disabled = true;
+        document.getElementById('btn12').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('eleven-am').style.cursor = "default";
 
     }
 } 
 
 if (currentHour >= 13) {
-    onePM.value = "Current Hour";
+    document.getElementById('one-pm').placeholder = "Current Hours: Log Upcoming Event here...";
     onePM.style.backgroundColor = "rgb(227, 227, 129)";
     onePM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 12) {
@@ -371,11 +404,13 @@ if (currentHour >= 13) {
         twelvePM1.style.color = "white";
         document.getElementById('twelve-pm1').readOnly = true;
         document.getElementById('btn13').disabled = true;
+        document.getElementById('btn13').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('twelve-pm').style.cursor = "default";
     }
 } 
 
 if (currentHour >= 14) {
-    twoPM.value = "Current Hour";
+    document.getElementById('two-pm').placeholder = "Current Hours: Log Upcoming Event here...";
     twoPM.style.backgroundColor = "rgb(227, 227, 129)";
     twoPM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 13) {
@@ -388,11 +423,13 @@ if (currentHour >= 14) {
         onePM1.style.color = "white";
         document.getElementById('one-pm1').readOnly = true;
         document.getElementById('btn14').disabled = true;
+        document.getElementById('btn14').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('one-pm').style.cursor = "default";
     }
 }
 
 if (currentHour >= 15) {
-    threePM.value = "Current Hour";
+    document.getElementById('three-pm').placeholder = "Current Hours: Log Upcoming Event here...";
     threePM.style.backgroundColor = "rgb(227, 227, 129)";
     threePM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 14) {
@@ -405,11 +442,13 @@ if (currentHour >= 15) {
         twoPM1.style.color = "white";
         document.getElementById('two-pm1').readOnly = true;
         document.getElementById('btn15').disabled = true;
+        document.getElementById('btn15').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('two-pm').style.cursor = "default";
     }
 }
 
 if (currentHour >= 16) {
-    fourPM.value = "Current Hour";
+    document.getElementById('four-pm').placeholder = "Current Hours: Log Upcoming Event here...";
     fourPM.style.backgroundColor = "rgb(227, 227, 129)";
     fourPM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 15) {
@@ -422,11 +461,13 @@ if (currentHour >= 16) {
         threePM1.style.color = "white";
         document.getElementById('three-pm1').readOnly = true;
         document.getElementById('btn16').disabled = true;
+        document.getElementById('btn16').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('three-pm').style.cursor = "default";
     }
 }
 
 if (currentHour >= 17) {
-    fivePM.value = "Current Hour";
+    document.getElementById('five-pm').placeholder = "Current Hours: Log Upcoming Event here...";
     fivePM.style.backgroundColor = "rgb(227, 227, 129)";
     fivePM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 16) {
@@ -439,11 +480,13 @@ if (currentHour >= 17) {
         fourPM1.style.color = "white";
         document.getElementById('four-pm1').readOnly = true;
         document.getElementById('btn17').disabled = true;
+        document.getElementById('btn17').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('four-pm').style.cursor = "default";
     }
 }
 
 if (currentHour >= 18) {
-    sixPM.value = "Current Hour";
+    document.getElementById('six-pm').placeholder = "Current Hours: Log Upcoming Event here...";
     sixPM.style.backgroundColor = "rgb(227, 227, 129)";
     sixPM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 17) {
@@ -456,11 +499,13 @@ if (currentHour >= 18) {
         fivePM1.style.color = "white";
         document.getElementById('five-pm1').readOnly = true;
         document.getElementById('btn18').disabled = true;
+        document.getElementById('btn18').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('five-pm').style.cursor = "default";
     }
 }
 
 if (currentHour >= 19) {
-    sevenPM.value = "Current Hour";
+    document.getElementById('seven-pm').placeholder = "Current Hours: Log Upcoming Event here...";
     sevenPM.style.backgroundColor = "rgb(227, 227, 129)";
     sevenPM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 18) {
@@ -473,11 +518,13 @@ if (currentHour >= 19) {
         sixPM1.style.color = "white";
         document.getElementById('six-pm1').readOnly = true;
         document.getElementById('btn19').disabled = true;
+        document.getElementById('btn19').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('six-pm').style.cursor = "default";
     }
 }
 
 if (currentHour >= 20) {
-    eightPM.value = "Current Hour";
+    document.getElementById('eight-pm').placeholder = "Current Hours: Log Upcoming Event here...";
     eightPM.style.backgroundColor = "rgb(227, 227, 129)";
     eightPM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 19) {
@@ -490,11 +537,13 @@ if (currentHour >= 20) {
         sevenPM1.style.color = "white";
         document.getElementById('seven-pm1').readOnly = true;
         document.getElementById('btn20').disabled = true;
+        document.getElementById('btn20').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('seven-pm').style.cursor = "default";
     }
 }
 
 if (currentHour >= 21) {
-    ninePM.value = "Current Hour";
+    document.getElementById('nine-pm').placeholder = "Current Hours: Log Upcoming Event here...";
     ninePM.style.backgroundColor = "rgb(227, 227, 129)";
     ninePM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 20) {
@@ -507,11 +556,13 @@ if (currentHour >= 21) {
         eightPM1.style.color = "white";
         document.getElementById('eight-pm1').readOnly = true;
         document.getElementById('btn21').disabled = true;
+        document.getElementById('btn21').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('eight-pm').style.cursor = "default";
     }
 }
 
 if (currentHour >= 22) {
-    tenPM.value = "Current Hour";
+    document.getElementById('ten-pm').placeholder = "Current Hours: Log Upcoming Event here...";
     tenPM.style.backgroundColor = "rgb(227, 227, 129)";
     tenPM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 21) {
@@ -524,12 +575,14 @@ if (currentHour >= 22) {
         ninePM1.style.color = "white";
         document.getElementById('nine-pm1').readOnly = true;
         document.getElementById('btn22').disabled = true;
+        document.getElementById('btn22').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('nine-pm').style.cursor = "default";
     }
 }
 
 
 if(currentHour >= 23) {
-    elevenPM.value = "Current Hour";
+    document.getElementById('eleven-pm').placeholder = "Current Hours: Log Upcoming Event here...";
     elevenPM.style.backgroundColor = "rgb(227, 227, 129)";
     elevenPM1.style.backgroundColor = "rgb(227, 227, 129)";
     if (currentHour != 22) {
@@ -542,6 +595,8 @@ if(currentHour >= 23) {
         tenPM1.style.color = "white";
         document.getElementById('ten-pm1').readOnly = true;
         document.getElementById('btn23').disabled = true;
+        document.getElementById('btn23').style.backgroundColor = 'rgb(213, 102, 102)';
+        document.getElementById('ten-pm').style.cursor = "default";
         localStorage.removeItem("RESPONSE1", twelveAM1.value);
         localStorage.removeItem("RESPONSE2", oneAM1.value);
         localStorage.removeItem("RESPONSE3", twoAM1.value);
