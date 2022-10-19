@@ -21,7 +21,7 @@ https://junnel308.github.io/event_scheduler_notification/
 
 ## Credits
 
-Robert Wijtman (Instructor), Bootcamp Modules, w3schools.com, stackoverflow.com.
+Robert Wijtman (Instructor), Bootcamp Modules, w3schools.com, stackoverflow.com, SweetAlert.
 
 ## License
 

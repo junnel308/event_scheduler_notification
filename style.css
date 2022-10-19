@@ -1,12 +1,17 @@
+/* Universal Selectors */
 * {
     box-sizing: border-box;
 }
+
+/* Element Selectors*/
 body {
     height: 100%;
     margin: 0;
     padding: 0;
     background-color: rgb(236, 236, 170);
 }
+
+/* Element Selectors*/
 header {
     position: fixed;
     width: 100%;
@@ -15,10 +20,12 @@ header {
     border-width: 8px;
 }
 
+/* Element Selectors*/
 h1 {
     text-align: center;
 }
 
+/* ID Selector */
 #todays-date {
     width: 45%; 
     height: 50px; 
@@ -29,6 +36,7 @@ h1 {
     
 }
 
+/* ID Selector */
 #wrapper {
     width: 100%;
     margin: auto;
@@ -36,6 +44,7 @@ h1 {
 
 }
 
+/* Class Selectors */
 .time-display {
     width: 12%; 
     height: 75px; 
@@ -49,11 +58,14 @@ h1 {
     background-color: rgb(165, 124, 213);
     cursor: default;
 }
+
+/* Class Selectors. Eliminate blue border lines when clicking on the input box */
 .time-display:focus {
     outline: none;
     box-shadow: none;
 }
 
+/* Class Selectors */
 .user-input {
     width: 39%;
     height: 75px;
@@ -64,11 +76,14 @@ h1 {
     font-size: 20px;
     border-right: none;
 }
+
+/* Class Selectors. Eliminate blue border lines when clicking on the input box */
 .user-input:focus {
     outline: none;
     box-shadow: none;
 }
 
+/* Class Selectors */
 .user-input1 {
     width: 39%;
     height: 75px;
@@ -87,6 +102,7 @@ h1 {
     box-shadow: none;
 }
 
+/* Element Selectors */
 button {
     width: 10%;
     height: 75px;
@@ -97,6 +113,7 @@ button {
     cursor: pointer;
 }
 
+/* Element Selector w/ hover element. turns button border line to yellowgreen */
 button:hover {
     border-color: yellowgreen;
 }

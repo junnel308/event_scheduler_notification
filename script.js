@@ -1,4 +1,6 @@
 var todaysDate = document.querySelector("#todays-date");
+
+//Buttons for each day
 var lockButton1 = document.querySelector('#btn1');
 var lockButton2 = document.querySelector('#btn2');
 var lockButton3 = document.querySelector('#btn3');
@@ -24,6 +26,7 @@ var lockButton22= document.querySelector('#btn22');
 var lockButton23= document.querySelector('#btn23');
 var lockButton24= document.querySelector('#btn24');
 
+//AM and PM  Query Selectors
 var twelveAM = document.querySelector("#twelve-am");
 var oneAM = document.querySelector("#one-am");
 var twoAM = document.querySelector("#two-am");
@@ -49,6 +52,7 @@ var ninePM = document.querySelector("#nine-pm");
 var tenPM = document.querySelector("#ten-pm");
 var elevenPM = document.querySelector("#eleven-pm");
 
+//AM and PM local storage query selectors
 var twelveAM1 = document.querySelector("#twelve-am1");
 var oneAM1 = document.querySelector("#one-am1");
 var twoAM1 = document.querySelector("#two-am1");
@@ -74,14 +78,17 @@ var ninePM1 = document.querySelector("#nine-pm1");
 var tenPM1 = document.querySelector("#ten-pm1");
 var elevenPM1 = document.querySelector("#eleven-pm1");
 
+//Variables for real time and hours
 var date = new Date();
 var currentDay = date.getDay();
 var currentHour = date.getHours();
 var currentMinute = date.getMinutes();
 var currentDate = date.toDateString();
 
+//displays current time to HTML
 todaysDate.value = currentDate;
 
+//Getting the value of the user input and  event listeners for AM
 twelveAM1.value = JSON.parse(localStorage.getItem("RESPONSE1"));
 lockButton1.addEventListener("click", displayInput1);
 oneAM1.value = JSON.parse(localStorage.getItem("RESPONSE2"));
@@ -107,6 +114,7 @@ lockButton11.addEventListener("click", displayInput11);
 elevenAM1.value = JSON.parse(localStorage.getItem("RESPONSE12"));
 lockButton12.addEventListener("click", displayInput12);
 
+//Getting the value of the user input and  event listeners for AM
 twelvePM1.value = JSON.parse(localStorage.getItem("RESPONSE13"));
 lockButton13.addEventListener("click", displayInput13);
 onePM1.value = JSON.parse(localStorage.getItem("RESPONSE14"));
@@ -132,6 +140,7 @@ lockButton23.addEventListener("click", displayInput23);
 elevenPM1.value = JSON.parse(localStorage.getItem("RESPONSE24"));
 lockButton24.addEventListener("click", displayInput24);
 
+// Loop for conditionals if statements
 for(var i = 0; i < currentDate.length; i++) {
     
 while (true){
@@ -142,7 +151,7 @@ while (true){
     }
 }
 
-//Time AM
+//Conditional IF statement for the AM portion
 if (currentHour >= 00) {
     document.getElementById('twelve-am').placeholder = "Current Hours: Log Upcoming Event here...";
     twelveAM.style.backgroundColor = "rgb(227, 227, 129)";
@@ -369,7 +378,7 @@ if(currentHour >= 11) {
     }
 }
 
-// Time PM
+// Conditional IF statmenent for the PM portion
 if (currentHour >= 12) {
     document.getElementById('twelve-pm').placeholder = "Current Hours: Log Upcoming Event here...";
     twelvePM.style.backgroundColor = "rgb(227, 227, 129)";
@@ -626,7 +635,7 @@ if(currentHour >= 23) {
 
 }
 
-
+// Functions for the local storage and sweetalert messages depending on user input.
 function displayInput1 () {
     localStorage.setItem('RESPONSE1', JSON.stringify(twelveAM.value));
     if (!twelveAM.value){
