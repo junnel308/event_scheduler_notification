@@ -138,8 +138,6 @@ if (currentHour >= 00) {
     twelveAM.value = "Current Hour"
     twelveAM.style.backgroundColor = "rgb(227, 227, 129)";
     twelveAM1.style.backgroundColor = "rgb(227, 227, 129)";
-    
-    
 }
 
 if (currentHour >= 1) {
@@ -155,6 +153,7 @@ if (currentHour >= 1) {
         twelveAM1.style.color = "white";
         document.getElementById('twelve-am').readOnly = true;
         document.getElementById('twelve-am1').readOnly = true;
+        document.getElementById('btn1').disabled = true;
     }
 } 
 
@@ -171,6 +170,7 @@ if (currentHour >= 2) {
         oneAM1.style.backgroundColor =  "rgb(124, 134, 124)";
         oneAM1.style.color = "white";
         document.getElementById('one-am1').readOnly = true;
+        document.getElementById('btn2').disabled = true;
     }
 }
 
@@ -187,6 +187,7 @@ if (currentHour >= 3) {
         twoAM1.style.backgroundColor =  "rgb(124, 134, 124)";
         twoAM1.style.color = "white";
         document.getElementById('two-am1').readOnly = true;
+        document.getElementById('btn3').disabled = true;
     }
 }
 
@@ -203,6 +204,7 @@ if (currentHour >= 4) {
         threeAM1.style.backgroundColor =  "rgb(124, 134, 124)";
         threeAM1.style.color = "white";
         document.getElementById('three-am1').readOnly = true;
+        document.getElementById('btn4').disabled = true;
         
     }
 }
@@ -220,6 +222,7 @@ if (currentHour >= 5) {
         fourAM1.style.backgroundColor =  "rgb(124, 134, 124)";
         fourAM1.style.color = "white";
         document.getElementById('four-am1').readOnly = true;
+        document.getElementById('btn5').disabled = true;
     }
 }
 
@@ -236,6 +239,7 @@ if (currentHour >= 6) {
         fiveAM1.style.backgroundColor =  "rgb(124, 134, 124)";
         fiveAM1.style.color = "white";
         document.getElementById('five-am1').readOnly = true;
+        document.getElementById('btn6').disabled = true;
     }
     }
 
@@ -252,6 +256,7 @@ if (currentHour >= 7) {
         sixAM1.style.backgroundColor =  "rgb(124, 134, 124)";
         sixAM1.style.color = "white";
         document.getElementById('six-am').readOnly = true;
+        document.getElementById('btn7').disabled = true;
     }
 }
 
@@ -268,6 +273,7 @@ if (currentHour >= 8) {
         sevenAM1.style.backgroundColor =  "rgb(124, 134, 124)";
         sevenAM1.style.color = "white";
         document.getElementById('seven-am1').readOnly = true;
+        document.getElementById('btn8').disabled = true;
     }
 }
 
@@ -284,6 +290,7 @@ if (currentHour >= 9) {
         eightAM1.style.backgroundColor =  "rgb(124, 134, 124)";
         eightAM1.style.color = "white";
         document.getElementById('eight-am1').readOnly = true;
+        document.getElementById('btn9').disabled = true;
     }
 }
 
@@ -300,6 +307,7 @@ if (currentHour >= 10) {
         nineAM1.style.backgroundColor =  "rgb(124, 134, 124)";
         nineAM1.style.color = "white";
         document.getElementById('nine-am1').readOnly = true;
+        document.getElementById('btn10').disabled = true;
     }
 }
 
@@ -317,6 +325,7 @@ if(currentHour >= 11) {
         tenAM1.style.backgroundColor =  "rgb(124, 134, 124)";
         tenAM1.style.color = "white";
         document.getElementById('ten-am1').readOnly = true;
+        document.getElementById('btn11').disabled = true;
 
     }
     if (currentHour != 24) {
@@ -343,6 +352,7 @@ if (currentHour >= 12) {
         elevenAM1.style.backgroundColor =  "rgb(124, 134, 124)";
         elevenAM1.style.color = "white";
         document.getElementById('eleven-am1').readOnly = true;
+        document.getElementById('btn12').disabled = true;
 
     }
 } 
@@ -360,6 +370,7 @@ if (currentHour >= 13) {
         twelvePM1.style.backgroundColor =  "rgb(124, 134, 124)";
         twelvePM1.style.color = "white";
         document.getElementById('twelve-pm1').readOnly = true;
+        document.getElementById('btn13').disabled = true;
     }
 } 
 
@@ -376,6 +387,7 @@ if (currentHour >= 14) {
         onePM1.style.backgroundColor =  "rgb(124, 134, 124)";
         onePM1.style.color = "white";
         document.getElementById('one-pm1').readOnly = true;
+        document.getElementById('btn14').disabled = true;
     }
 }
 
@@ -392,6 +404,7 @@ if (currentHour >= 15) {
         twoPM1.style.backgroundColor =  "rgb(124, 134, 124)";
         twoPM1.style.color = "white";
         document.getElementById('two-pm1').readOnly = true;
+        document.getElementById('btn15').disabled = true;
     }
 }
 
@@ -408,6 +421,7 @@ if (currentHour >= 16) {
         threePM1.style.backgroundColor =  "rgb(124, 134, 124)";
         threePM1.style.color = "white";
         document.getElementById('three-pm1').readOnly = true;
+        document.getElementById('btn16').disabled = true;
     }
 }
 
@@ -424,6 +438,7 @@ if (currentHour >= 17) {
         fourPM1.style.backgroundColor =  "rgb(124, 134, 124)";
         fourPM1.style.color = "white";
         document.getElementById('four-pm1').readOnly = true;
+        document.getElementById('btn17').disabled = true;
     }
 }
 
@@ -440,6 +455,7 @@ if (currentHour >= 18) {
         fivePM1.style.backgroundColor =  "rgb(124, 134, 124)";
         fivePM1.style.color = "white";
         document.getElementById('five-pm1').readOnly = true;
+        document.getElementById('btn18').disabled = true;
     }
 }
 
@@ -456,6 +472,7 @@ if (currentHour >= 19) {
         sixPM1.style.backgroundColor =  "rgb(124, 134, 124)";
         sixPM1.style.color = "white";
         document.getElementById('six-pm1').readOnly = true;
+        document.getElementById('btn19').disabled = true;
     }
 }
 
@@ -472,6 +489,7 @@ if (currentHour >= 20) {
         sevenPM1.style.backgroundColor =  "rgb(124, 134, 124)";
         sevenPM1.style.color = "white";
         document.getElementById('seven-pm1').readOnly = true;
+        document.getElementById('btn20').disabled = true;
     }
 }
 
@@ -488,6 +506,7 @@ if (currentHour >= 21) {
         eightPM1.style.backgroundColor =  "rgb(124, 134, 124)";
         eightPM1.style.color = "white";
         document.getElementById('eight-pm1').readOnly = true;
+        document.getElementById('btn21').disabled = true;
     }
 }
 
@@ -504,6 +523,7 @@ if (currentHour >= 22) {
         ninePM1.style.backgroundColor =  "rgb(124, 134, 124)";
         ninePM1.style.color = "white";
         document.getElementById('nine-pm1').readOnly = true;
+        document.getElementById('btn22').disabled = true;
     }
 }
 
@@ -521,127 +541,634 @@ if(currentHour >= 23) {
         tenPM1.style.backgroundColor =  "rgb(124, 134, 124)";
         tenPM1.style.color = "white";
         document.getElementById('ten-pm1').readOnly = true;
+        document.getElementById('btn23').disabled = true;
+        localStorage.removeItem("RESPONSE1", twelveAM1.value);
+        localStorage.removeItem("RESPONSE2", oneAM1.value);
+        localStorage.removeItem("RESPONSE3", twoAM1.value);
+        localStorage.removeItem("RESPONSE4", threeAM1.value);
+        localStorage.removeItem("RESPONSE5", fourAM1.value);
+        localStorage.removeItem("RESPONSE6", fiveAM1.value);
+        localStorage.removeItem("RESPONSE7", sixAM1.value);
+        localStorage.removeItem("RESPONSE8", sevenAM1.value);
+        localStorage.removeItem("RESPONSE9", eightAM1.value);
+        localStorage.removeItem("RESPONSE10", nineAM1.value);
+        localStorage.removeItem("RESPONSE11", tenAM1.value);
+        localStorage.removeItem("RESPONSE12", elevenAM1.value);
+        localStorage.removeItem("RESPONSE13", twelvePM1.value);
+        localStorage.removeItem("RESPONSE14", onePM1.value);
+        localStorage.removeItem("RESPONSE15", twoPM1.value);
+        localStorage.removeItem("RESPONSE16", threePM1.value);
+        localStorage.removeItem("RESPONSE17", fourPM1.value);
+        localStorage.removeItem("RESPONSE18", fivePM1.value);
+        localStorage.removeItem("RESPONSE19", sixPM1.value);
+        localStorage.removeItem("RESPONSE20", sevenPM1.value);
+        localStorage.removeItem("RESPONSE21", eightPM1.value);
+        localStorage.removeItem("RESPONSE22", ninePM1.value);
+        localStorage.removeItem("RESPONSE23", tenPM1.value);
+        localStorage.removeItem("RESPONSE24", elevenPM1.value);
     }
 }
+
 }
 
 
 function displayInput1 () {
     localStorage.setItem('RESPONSE1', JSON.stringify(twelveAM.value));
-    window.location.reload(true);
+    if (!twelveAM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput2 () {
     localStorage.setItem('RESPONSE2', JSON.stringify(oneAM.value));
-    window.location.reload(true);
+    if (!oneAM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
+    
 }
 
 function displayInput3 () {
     localStorage.setItem('RESPONSE3', JSON.stringify(twoAM.value));
-    window.location.reload(true);
+    if (!twoAM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput4 () {
     localStorage.setItem('RESPONSE4', JSON.stringify(threeAM.value));
-    window.location.reload(true);
+    if (!threeAM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput5 () {
     localStorage.setItem('RESPONSE5', JSON.stringify(fourAM.value));
-    window.location.reload(true);
+    if (!fourAM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput6 () {
     localStorage.setItem('RESPONSE6', JSON.stringify(fiveAM.value));
-    window.location.reload(true);
+    if (!fiveAM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput7 () {
     localStorage.setItem('RESPONSE7', JSON.stringify(sixAM.value));
-    window.location.reload(true);
+    if (!sixAM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput8 () {
     localStorage.setItem('RESPONSE8', JSON.stringify(sevenAM.value));
-    window.location.reload(true);
+    if (!sevenAM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput9 () {
     localStorage.setItem('RESPONSE9', JSON.stringify(eightAM.value));
-    window.location.reload(true);
+    if (!eightAM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput10 () {
     localStorage.setItem('RESPONSE10', JSON.stringify(nineAM.value));
-    window.location.reload(true);
+    if (!nineAM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput11 () {
     localStorage.setItem('RESPONSE11', JSON.stringify(tenAM.value));
-    window.location.reload(true);
+    if (!tenAM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput12 () {
     localStorage.setItem('RESPONSE12', JSON.stringify(elevenAM.value));
-    window.location.reload(true);
+    if (!elevenAM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput13 () {
     localStorage.setItem('RESPONSE13', JSON.stringify(twelvePM.value));
-    window.location.reload(true);
+    if (!twelvePM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput14 () {
     localStorage.setItem('RESPONSE14', JSON.stringify(onePM.value));
-    window.location.reload(true);
+    if (!onePM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput15 () {
     localStorage.setItem('RESPONSE15', JSON.stringify(twoPM.value));
-    window.location.reload(true);
+    if (!twoPM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput16 () {
     localStorage.setItem('RESPONSE16', JSON.stringify(threePM.value));
-    window.location.reload(true);
+    if (!threePM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput17 () {
     localStorage.setItem('RESPONSE17', JSON.stringify(fourPM.value));
-    window.location.reload(true);
+    if (!fourPM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput18 () {
     localStorage.setItem('RESPONSE18', JSON.stringify(fivePM.value));
-    window.location.reload(true);
+    if (!fivePM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput19() {
     localStorage.setItem('RESPONSE19', JSON.stringify(sixPM.value));
-    window.location.reload(true);
+    if (!sixPM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput20 () {
     localStorage.setItem('RESPONSE20', JSON.stringify(sevenPM.value));
-    window.location.reload(true);
+    if (!sevenPM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput21 () {
     localStorage.setItem('RESPONSE21', JSON.stringify(eightPM.value));
-    window.location.reload(true);
+    if (!eightPM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput22 () {
     localStorage.setItem('RESPONSE22', JSON.stringify(ninePM.value));
-    window.location.reload(true);
+    if (!ninePM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput23 () {
     localStorage.setItem('RESPONSE23', JSON.stringify(tenPM.value));
-    window.location.reload(true);
+    if (!tenPM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
 
 function displayInput24 () {
     localStorage.setItem('RESPONSE24', JSON.stringify(elevenPM.value));
-    window.location.reload(true);
+    if (!elevenPM.value){
+        swal({
+            title: "Its Empty!",
+            icon: "warning",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    } else {
+        swal({
+            title: "Logged Successfully!",
+            icon: "success",
+            text: " ",
+            buttons: false,
+            timer: 2000
+        }).then (response => {
+            window.location.reload(true);
+        })
+    }
 }
